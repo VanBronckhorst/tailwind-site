@@ -1,0 +1,3 @@
+[submodule "GameOfLifeJS"]
+	path = GameOfLifeJS
+	url = https://github.com/VanBronckhorst/GameOfLifeJS
