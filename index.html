@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Filippo Pellolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Filippo Pellolio",
+          "url": "https://www.filippopellolio.com",
+          "image": "https://new.filippopellolio.com/img/me.png",
+          "sameAs": [
+            "https://github.com/VanBronckhorst",
+            "https://scholar.google.com/citations?user=U3lCFIkAAAAJ&hl=en"
+          ],
+          "jobTitle": "Software Engineer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Google"
+          }  
+        }
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        a {
+            @apply text-blue-500;
+        }
+        .education-title {
+            @apply text-xl font-bold;
+        }
+        .education-card {
+            @apply bg-white p-6 rounded-lg shadow-lg mx-4 md:mx-0;
+        }
+        .education-date {
+            @apply text-sm text-gray-500;
+        }
+
+        .project-title {
+            @apply text-xl font-bold mb-2;
+        }
+        .project-date {
+            @apply text-sm text-gray-500 mb-2;
+        }
+        .project-link {
+            @apply text-blue-500 hover:text-blue-600;
+        }
+        .project-links {
+            @apply flex flex-row space-x-2;
+        }
+        .project-card {
+            @apply flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg mx-4 md:mx-0 my-4;
+        }
+        .project-image {
+            @apply mb-4 md:mb-0 md:mr-4 md:w-24 md:h-24 sm:w-48 sm:h-48 lg:w-48 lg:h-48;
+        }
+        .logo-link {
+            @apply text-black hover:text-gray-600;
+        }
+
+    </style>
+    <link href="css/styles.css" rel="stylesheet">
+    <svg style="display: none;">
+        <symbol id="github-logo" viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+            </path>
+        </symbol>
+        <symbol id="youtube-logo" viewBox="0 0 461.001 461.001">
+            <g>
+                <path style="fill:#F61C0D;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+            </g>
+        </symbol>
+    </svg>
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="https://filippopellolio.com" class="text-lg font-semibold text-white hover:text-gray-300">
+                Filippo Pellolio
+            </a>
+            <div class="flex space-x-4">
+                <a href="#home" class="text-white hover:text-gray-300">Home</a>
+                <a href="#experience" class="text-white hover:text-gray-300">Experience</a>
+                <a href="#education" class="text-white hover:text-gray-300">Education</a>
+                <a href="#projects" class="text-white hover:text-gray-300">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mx-auto my-12 p-6">
+        <!-- About section, which will stack elements vertically on small screens and lay them out side-by-side on larger screens -->
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="flex-none bg-white p-6 rounded-lg shadow-lg mb-4 md:mb-0 md:mr-4">
+                <img src="img/me.png" alt="Filippo Pellolio" class="rounded-full w-48 h-48 mb-4 mx-auto">
+                <h1 class="text-2xl font-bold">Filippo Pellolio</h1>
+                <p class="text-xl">Software Engineer at Google</p>
+                <div class="flex space-x-4 mt-1">
+                    <a class="logo-link" href="https://github.com/vanBronckhorst">
+                        <svg class="h-6 w-6" aria-hidden="true">
+                            <use xlink:href="#github-logo"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/filippopellolio" target="_blank"
+                        class="text-black hover:text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
+                            aria-hidden="true">
+                            <path
+                                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=U3lCFIkAAAAJ&hl=en" target="_blank"
+                        class="text-black hover:text-gray-600">
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 text-center">
+                <p class="text-lg">
+                    I'm a Software Engineer living in Los Angeles.</br>
+                    I'm currently at Google, working on <a href="https://chat.google.com">Chat</a>.
+                </p>
+                <div id="map1" style=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="container mx-auto my-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <!-- Experience Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mx-4 md:mx-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-16 w-16" aria-hidden="true">
+                    <path
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                        fill="#4285F4" />
+                    <path
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                        fill="#34A853" />
+                    <path
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                        fill="#FBBC05" />
+                    <path
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                        fill="#EA4335" />
+                    <path d="M1 1h22v22H1z" fill="none" />
+                </svg>
+                <h3 class="text-xl font-bold">Software Engineer - Google</h3>
+                <p class="text-sm text-gray-500">Nov 2017 - Current</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Tech Lead of the Spaces mobile team, focus on full stack design.</li>
+                    <li> Redesigned Google Meet app architecture and shipped it to the App Store during the pandemic.
+                    </li>
+                    <li> Designed and implemented a new experimentation system for Gmail iOS.</li>
+                    <li> Tech Lead of Hangouts iOS.</li>
+                    <li> Redesigned Hangouts Chat logging system.</li>
+                    <li> Working as a Software engineer on the iOS application for Hangouts Chat, focus on performance.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Experience Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mx-4 md:mx-0">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" aria-hidden="true" viewBox="0 0 90 82"
+                    version="1.1">
+                    <path d="m 26.95,66.453001 -11,11 -11,-11 22,0 z" style="fill:#65c1c2" />
+                    <path
+                        d="m 43.05,41.453001 c -2.3,-2.7 -2.2,-4.2 -0.8,-5.6 1.7,-1.7 3.5,-1 5.5,0.9 l -4.7,4.7 z m 23.6,-30 c 1.7,-1.6999994 3.5,-0.999999 5.5,0.9 l -4.7,4.7 c -2.4,-2.7 -2.3,-4.1 -0.8,-5.6 z m 14.2,4.8 c -2.1,3.2 -5.9,8.4 -9.8,4.5 l 9.9,-9.9 c -0.9,-0.8999994 -1.5,-1.6999992 -2.1,-2.1999992 -5.3,-5.3000001 -11.3,-5.4000001 -16,-0.7000001 -3.1,3.0999993 -4,6.6999993 -3.1,10.0999993 l -3.1,-3.5 c -0.8,0.4 -4.6,3.8 -1.8,8.8 l -3.5,-2.9 -4.7,4.7 6.4,6.4 c -4.9,-3.9 -10.2,-3.5 -14.4,0.7 -4.5,4.5 -4.2,10 -0.8,14.5 l -0.7,-0.7 c -4.5,-4.5 -9.4,-2.9 -11.8,-0.5 -1.9,1.9 -3,4.4 -2.5,6.2 l -9.7,-9.7 -5.2,5.2 19.2,19.2 10.3,0 -6.9,-6.9 c -3.6,-3.7 -3.7,-5.6 -1.9,-7.4 1.7,-1.7 3.7,-0.6 7.2,2.8 l 6.8,6.8 5.1,-5.1 -6.5,-6.5 c 4.7,3.5 10.3,3.7 15.3,-1.3 0,0 0.1,-0.1 0.1,-0.1 l 0,0 c 3.1,-2.8 4,-5.6 4,-5.6 l -3.9,-2.6 c -2.1,3.2 -5.8,8.4 -9.7,4.5 l 9.9,-9.9 6.2,6.2 5.4,-5.4 -7.7,-7.7 c -3.6,-3.6 -1.5,-7 0,-8.3 0.7,1.5 1.7,2.9 3,4.2 5,5 11.4,6 17.1,0.4 0,0 0.1,-0.1 0.1,-0.1 l 0,0 c 3.1,-2.8 4,-5.6 4,-5.6 l -4.2,-2.6 z"
+                        style="fill:#393e47;fill-opacity:1" />
+                </svg>
+                <h3 class="text-xl font-bold">Software Engineer - HERE Technologies</h3>
+                <p class="text-sm text-gray-500">Jul 2016 - Nov 2017</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Research Software Engineer role.</li>
+                    <li>Developed a <a
+                            href="https://patents.google.com/patent/US10445610B2/en?inventor=filippo+pellolio&oq=filippo+pellolio&page=1">lane-level
+                            Map-Matcher</a> based on the Viterbi algorithm.</li>
+                    <li>Authored <a
+                            href="https://patents.google.com/?inventor=Filippo+Pellolio&status=GRANT&type=PATENT">16
+                            Patents.</a></li>
+                    <li>Worked with real-time probe data and developed patented algorithm for <a
+                            href="https://patents.google.com/patent/US11024166B2/en?inventor=Filippo+Pellolio&status=GRANT&type=PATENT&page=1">Direction
+                            Based Traffic analysis</a>.</li>
+                </ul>
+            </div>
+
+            <!-- Experience Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mx-4 md:mx-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 250 249.97997">
+                    <g transform="matrix(1.25 0 0 -1.25 -1089.3 622.78)">
+                        <g>
+                            <path
+                                d="m1070.6 398.15c0 54.778-44.414 99.192-99.2 99.192s-99.2-44.406-99.2-99.192 44.414-99.192 99.2-99.192 99.2 44.406 99.2 99.192"
+                                fill="#d50032" />
+                            <path
+                                d="m192.28 86.984c-25.22 0-40.68 17.016-40.68 41.846 0 24.74 14.63 41.88 40.2 41.88 18.43 0 29.97-8.92 35.68-21.9l-22-7.83c-2.26 6.3-6.42 10.1-13.56 10.1-10.35 0-15.59-8.33-15.59-22.25 0-14.01 5.24-22.58 15.59-22.58 7.61 0 12.01 4.64 14.04 12.48l21.04-10.11c-4.05-10.586-15.46-21.636-34.72-21.636zm-164.48 1.422v47.814c0 11.3 1.192 16.76 4.408 22.24 5.35 8.92 19.617 12.37 32.111 12.37 12.485 0 26.763-3.45 32.114-12.37 3.206-5.48 4.402-10.94 4.402-22.24v-47.814h-24.271v48.284c0 5.47-0.711 9.05-2.735 11.42-1.903 2.26-4.991 3.33-9.51 3.33-4.528 0-7.613-1.07-9.517-3.33-2.014-2.37-2.735-5.95-2.735-11.42v-48.284h-24.267zm87.765 0v80.874h24.27v-80.874h-24.27z"
+                                transform="matrix(.8 0 0 -.8 871.47 498.22)" fill="#fff" />
+                        </g>
+                    </g>
+                </svg>
+                <h3 class="text-xl font-bold">Graduate Research Assistant - UIC</h3>
+                <p class="text-sm text-gray-500">Jan 2016 - Jun 2016</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Worked in the Electronic Visualization Laboratory on a thesis project.</li>
+                    <li>Developed visualizations for <a
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U3lCFIkAAAAJ&citation_for_view=U3lCFIkAAAAJ:MXK_kJrjxJIC">cancer
+                            therapy outcomes</a> and <a
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U3lCFIkAAAAJ&citation_for_view=U3lCFIkAAAAJ:UebtZRa9Y70C">brain
+                            activation network analysis</a>.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="container mx-auto my-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Education</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="education-card">
+                <h3 class="education-title">Politecnico di Milano</h3>
+                <span class="education-date">Sep 2014 - July 2017</span>
+                <h4>Master's Degree in Computer Science and Engineering</h4>
+                <p>
+                    110/110 Summa Cum Laude
+                </p>
+            </div>
+            <!-- End .education-card -->
+
+            <div class="education-card">
+                <h3 class="education-title">University of Illinois at Chicago</h3>
+                <span class="education-date">March 2015 - July 2016</span>
+                <h4>Master's Degree in Computer Science</h4>
+            </div>
+
+            <div class="education-card">
+                <h3 class="education-title">Politecnico di Milano</h3>
+                <span class="education-date">Sep 2011 - July 2014</span>
+                <h4>Bachelor's Degree in Computer Engineering</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto my-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project Card - Sudoku JS-->
+            <div class="project-card">
+                <img src="img/portfolio/sudoku.png" alt="Sudoku" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Sudoku</h3>
+                    <span class="project-date">Apr 2023</span>
+                    <p>Simple Javascript based Sudoku game. Developed because I couldn't find a good sudoku app that
+                        supported Apple Pencil input.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/sudokuJs">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="https://vanbronckhorst.github.io/sudokuJs/" class="project-link">Link</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project Card - Wordle JS-->
+            <div class="project-card">
+                <img src="img/portfolio/wordle.png" alt="Wordle" class="project-image md:w-12 sm:w-24 lg:w-24">
+                <div class="project-info">
+                    <h3 class="project-title">Wordle</h3>
+                    <span class="project-date">Nov 2022</span>
+                    <p>Simple Javascript Wordle clone with an on screen keyboard.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/wordle">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="https://vanbronckhorst.github.io/wordle/" class="project-link">Link</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project Card - Chess JS -->
+            <div class="project-card">
+                <img src="img/portfolio/chess.png" alt="Chess JS" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Chess JS</h3>
+                    <span class="project-date">Oct 2018</span>
+                    <p>Chess engine implemented in Javascript, utilizing a Min-Max tree with heuristic evaluation.</p>
+                    <a href="./chess/index.html" class="project-link">Link to Project</a>
+                </div>
+            </div>
+
+            <!-- Project Card - Quadtree Canvas -->
+            <div class="project-card">
+                <img src="img/portfolio/canvasQuad.png" alt="Quadtree Canvas" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Quadtree Canvas</h3>
+                    <span class="project-date">Oct 2018</span>
+                    <p>JavaScript project for procedural image generation using quadtree splitting.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/ImageQuadtree">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="./canvas/index.html" class="project-link">Link to Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - Transparency Tool -->
+            <div class="project-card">
+                <img src="img/portfolio/transparency.png" alt="Transparency Tool" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Transparency Tool</h3>
+                    <span class="project-date">Oct 2018</span>
+                    <p>JavaScript tool to make a color in an image transparent, with a custom magnifier.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/ImageQuadtree">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="./canvas/transparency.html" class="project-link">Link to Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - Still Crazy After All These Years -->
+            <div class="project-card">
+                <img src="img/portfolio/viz1.png" alt="Still Crazy After All These Years" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Still Crazy After All These Years</h3>
+                    <span class="project-date">Sept 2015</span>
+                    <p>First project for CS424 at UIC, exploring age distribution in world's population in relation to
+                        historical events.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/Viz1">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="https://youtu.be/NQXA36wNr98">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="./viz1/index.html" class="project-link">Link to Project</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project Card - Shadows in the Rain -->
+            <div class="project-card">
+                <img src="img/portfolio/CS424_project3_animated.gif" alt="Shadows in the Rain" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Shadows in the Rain</h3>
+                    <span class="project-date">Oct 2015</span>
+                    <p>Second CS424 project at UIC, displaying hurricane data in the Atlantic and Pacific Oceans.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/VizProject2">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="https://youtu.be/UX_mJgXvPJ8?si=V6xc9nLsy4XFCc1l">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="./viz2/index.html" class="project-link">Link to Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - Rave On -->
+            <div class="project-card">
+                <img src="img/portfolio/viz3.png" alt="Rave On" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Rave On</h3>
+                    <span class="project-date">Nov 2015</span>
+                    <p>Third CS424 project at UIC, a dynamic visualization of music data, including popularity and
+                        relationships.</p>
+                    <div class="project-links">
+                        <a class="logo-link" href="https://github.com/VanBronckhorst/VizProject3">
+                            <svg class="h-6 w-6" aria-hidden="true">
+                                <use xlink:href="#github-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="https://youtu.be/6nENS0D59uo?si=ytigMgX_-xN9sDuP">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="./viz3/index.html" class="project-link">Link to Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - SAGE2 Whiteboard -->
+            <div class="project-card">
+                <img src="img/portfolio/whiteboard.jpg" alt="SAGE2 Whiteboard" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">SAGE2 Whiteboard</h3>
+                    <span class="project-date">May 2016</span>
+                    <p>Application for drawing on touch-enabled screens in the SAGE2 collaborative environment,
+                        developed at UIC.</p>
+                    <!-- No direct link provided in source -->
+                    <div class="project-links">
+                        <a href="https://youtu.be/YfLukW_1QRc">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - Wildlife Defense -->
+            <div class="project-card">
+                <img src="img/portfolio/wildlife.png" alt="Wildlife Defense" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Wildlife Defense</h3>
+                    <span class="project-date">Nov 2015</span>
+                    <p>Game developed during a Hackathon in Chicago, focusing on animal survival against urban
+                        expansion.</p>
+                    <!-- No direct link provided in source -->
+                    <div class="project-links">
+                        <a href="https://youtu.be/zezU8GS06tE?si=2tQFnXv50FKP9uPE">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - SheepLand -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title">SheepLand</h3>
+                    <span class="project-date">2014</span>
+                    <p>Final Bachelor's degree project, a Java based online multiplayer game.</p>
+                    <div class="project-links">
+                        <a href="https://youtu.be/2Keo3fwNXlI">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - MeteoCal -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title">MeteoCal</h3>
+                    <span class="project-date">2014</span>
+                    <p>Web application for scheduling events with weather notifications, developed in J2EE and JSF.</p>
+                    <div class="project-links">
+                        <a href="https://youtu.be/qhV_lOyuVSg">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card - Altera Floorplacer -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title">Altera Floorplacer</h3>
+                    <span class="project-date">2014</span>
+                    <p>Graphical web interface for floorplacing on Altera FPGAs, involving optimization scripts in
+                        Python.</p>
+                    <div class="project-links">
+                        <a href="https://youtu.be/viSFzBhyP5c">
+                            <svg class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                <use xlink:href="#youtube-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="libs/d3.v3.min.js"></script>
+    <script src="libs/topojson.v1.min.js"></script>
+    <script src="libs/datamaps.world.min.js"></script>
+    <script>
+        // Use ISO alpha-3 country codes, see e.g. https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+        COUNTRIES =
+        {
+            ITA: { fillKey: 'visited', text:'Lived 1992 - 2015' },
+            USA: { fillKey: 'visited', text:'Currently Living' },
+            TWN: { fillKey: 'visited', text:'Visited 2023' },
+            MEX: { fillKey: 'visited', text:'Visited 2023' },
+            DOM: { fillKey: 'visited', text:'Visited 2024' },
+            GBR: { fillKey: 'visited', text:'Visited 2007,2011,2019' },
+            ESP: { fillKey: 'visited', text:'Visited 2012' },
+            CHE: { fillKey: 'visited'},
+            FRA: { fillKey: 'visited'},
+            AUT: { fillKey: 'visited'},
+            TUN: { fillKey: 'visited'},
+            MAR: { fillKey: 'visited'},
+        }
+
+
+        var map = new Datamap({
+            scope: 'world',
+            element: document.getElementById('map1'),
+            responsive: true,
+            fills: {
+                defaultFill: '#D0D0D0',
+                visited: '#389e00',
+                city: '#FC8050'
+            },
+            geographyConfig: {
+                highlightOnHover: true,
+                highlightFillColor: '#A0C0A0',
+                highlightBorderColor: '#F0F0F0',
+                popupOnHover: false,
+                popupTemplate: function (geography, data) {
+                    if (data.text === undefined) {
+                        return '';
+                    }
+                    return '<div class="hoverinfo"><b>' + geography.properties.name + ":<br>" + data.text + '</b></div>';
+                },
+            },
+            bubblesConfig: {
+                borderWidth: 1,
+                borderColor: '#FFFFFF',
+                highlightOnHover: true,
+                popupOnHover: true,
+                popupTemplate: function (geo, data) {
+                    return "<div class='hoverinfo'>" + data.name + ":<br>" + data.date + "</div>";
+                }
+            },
+            data: COUNTRIES
+        });
+
+        CITIES =
+            [
+                { name: 'Lezzeno', latitude: 45.9451, longitude: 9.1834, radius: 2, fillKey: 'city', date: '1992-2015' },
+                { name: 'Chicago', latitude: 41.8781, longitude: -87.6298, radius: 2, fillKey: 'city', date: '2015-2017'},
+                { name: 'San Francisco', latitude: 37.7749, longitude: -122.4194, radius: 2, fillKey: 'city', date: '2017-2020' },
+                { name: 'Los Angeles', latitude: 34.0549, longitude: -118.2426, radius: 2, fillKey: 'city', date: '2020-Current' },
+            ]
+
+        map.bubbles(CITIES);
+
+        var arcs = []
+        for (var i = 0; i < CITIES.length - 1; i++) {
+            arcs.push({origin: CITIES[i], destination: CITIES[i + 1]})
+        }
+        map.arc(arcs);
+
+        window.addEventListener('resize', function () {
+            map.resize();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+.axis {
+  font-family: arial;
+  font-size:3em;
+}
+
+.tick {
+  fill:black;
+  stroke:black;
+}
+
+circle.max_wind_circle {
+  stroke:black;
+  stroke-width:0.5px;
+  fill:rgb(195,0,0);
+}
+
+circle.max_wind_circle:hover {
+  fill: yellow !important;
+}
+
+circle.min_pressure_circle {
+  stroke:black;
+  stroke-width:0.5px;
+  fill:rgb(0,0,128);
+}
+
+circle.min_pressure_circle:hover {
+  fill: yellow !important;
+}
+
+path.domain {
+  fill:none;
+  stroke:black;
+  stroke-width:2px;
+}
+
+path.max_wind_lines {
+  fill:none;
+  stroke:black;
+  stroke-width:2px;
+  stroke:rgb(195,0,0);
+  opacity:0.7;
+}
+
+path.min_pressure_lines {
+  fill:none;
+  stroke:black;
+  stroke-width:2px;
+  stroke:rgb(0,0,128);
+  opacity:0.7;
+}
+
+#tooltip {
+  pointer-events: none;
+}
+
+#tooltip rect{
+  width: 200px;
+  height: 140px;
+  padding: 10px;
+  fill: rgba(255,165,0,0.7);
+  stroke: rgba(0,0,0,1);
+  stroke-width:2;
+  rx: 10px;
+  ry: 10px;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#tooltip text{
+  font-family: sans-serif;
+  font-size: 23px;
+  line-height: 20px;
+  font-weight:bold;
+}

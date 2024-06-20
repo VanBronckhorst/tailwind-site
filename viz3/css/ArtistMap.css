@@ -1,0 +1,9 @@
+.map-div {
+	height: 100%;
+	width: 100%;
+}
+.my-custom-layer{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+}

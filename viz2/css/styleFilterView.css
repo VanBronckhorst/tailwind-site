@@ -1,0 +1,100 @@
+.filterView{	
+	background-color:rgba(255,255,255,0.5);	
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	margin-top: 0;
+	width: 25%;
+	height: 100%;
+	
+}
+
+.title-controls{
+	color: black;	
+	opacity: 1;
+	font-size: 50;
+	x: 25%;
+	y:10%;
+}
+
+#svg-list{
+	width: 90%;
+	height: 100%;
+}
+#svg-filter{
+	width: 90%;
+	height: 100%;
+}
+#svg-season{
+	width: 90%;
+	height: 100%;
+}
+
+#rect-list{
+	width: 97%;
+	opacity: 0.7;
+	fill:white;
+	stroke: black;
+	stroke-width: 3px;
+}
+#rect-filter{
+	width: 97%;
+	opacity: 0.7;
+	fill:white;
+	stroke: black;
+	stroke-width: 3px;
+}
+#rect-season-atlantic{
+	width: 40%;
+	opacity: 0.7;
+	fill:white;
+	stroke: black;
+	stroke-width: 1px;
+}
+#rect-season-pacific{
+	width: 40%;
+	opacity: 0.7;
+	fill:white;
+	stroke: black;
+	stroke-width: 1px;
+}
+#rect-season-pacific.seasonOn{
+	fill:purple;
+}
+#rect-season-pacific.seasonOff{
+	opacity: 0.7;
+	fill:white;
+}
+#rect-season-atlantic.seasonOn{
+	fill:purple;
+}
+#rect-season-atlantic.seasonOff{
+	opacity: 0.7;
+	fill:white;
+}
+
+#svg-arrow-filterView.open{
+	position: absolute;
+}
+
+#divArrowFilter{
+	position: absolute;
+	float:left;
+	background-color: grey;
+	left: 25%;
+	bottom: 3%	;
+	width: 1%;
+	height: 4%;
+}
+
+
+.axisFilter path,
+.axisFilter line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axisFilter text {
+	font-size: 18px;
+}

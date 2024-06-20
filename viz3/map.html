@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" /> <!-- leaflet css-->
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script><!-- leaflet js -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvQMT2jUvbqqp32py6OeStXM7sVu8ASNg&signed_in=true"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/autoCompleteStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/forceDiagramStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/ArtistMap.css">
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="js/ArtistLayer.js"></script>
+		<script src="js/artistsHelper.js"></script>
+		<script src="js/DataManager.js"></script>
+		<script src="js/AutoCompleteBox.js"></script>
+		<script src="js/ArtistMap.js"></script>
+	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K75GYMD0KY"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-K75GYMD0KY');
+	</script>
+	<body style="background-color: #dddddd">
+		<div id="autocomplete" style="position: absolute;left:0%;width:20%;top:0px;height:8%"></div>
+		<div  style="position: absolute;left:20%;width:60%;top:0px;height:100%">
+			<div  style="position: absolute;left:20%;width:60%;top:10%;height:80%">
+		<div id="mapCont" style="position: absolute;left:20%;width:60%;top:0px;height:100%"></div>
+			</div>
+			</div>
+		<div id="autocomplete2" style="position: absolute;left:80%;width:20%;top:0px;height:8%"></div>
+		<script type="text/javascript">
+			var dm = new DataManager();
+			var m = new ArtistMap("#mapCont")
+			var auto = new AutoCompleteBox("#autocomplete")
+			var auto2 = new AutoCompleteBox("#autocomplete2")
+			auto.searchFunc(function(d){if(d){
+											dm.suggestArtist(d,function(err,data){if(!err){	//console.log(data);
+																							auto.showResults(data["artists"])} },5)
+											}
+										})
+				.selectedFunc(function(id){ 
+											dm.completeProfileFromId(id,function(err,data){m.addArtist(data["artist"],1);})
+				});
+			auto2.searchFunc(function(d){if(d){
+											dm.suggestArtist(d,function(err,data){if(!err){	//console.log(data);
+																							auto2.showResults(data["artists"])} },5)
+											}
+										})
+				.selectedFunc(function(id){ 
+											dm.completeProfileFromId(id,function(err,data){m.addArtist(data["artist"],2);})
+				});
+		</script>
+	</body>
+</html>

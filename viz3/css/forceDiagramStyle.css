@@ -1,0 +1,36 @@
+.node {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.node:active {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+  
+}
+
+.player1{
+	stroke: #ABD9E9;
+	stroke-width: 8px;
+	fill: #ABD9E9;
+}
+.player2{
+	stroke: #FEE0D2;
+	stroke-width: 8px;
+	fill:#FEE0D2;
+}
+
+.player1.player2{
+	stroke: url(#both);
+	stroke-width: 8px;
+	fill: url(#both);
+}
+
+.link {
+  stroke: #999;
+}
+
+.avatar-text{
+	font-family: arial;
+	font-size: 16px;
+}

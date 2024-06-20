@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+</head>
+
+<body id="page-top" class="index">
+
+   <TABLE BORDER="5"    WIDTH="100%"   CELLPADDING="4" CELLSPACING="3">
+      <TR>
+         <TH COLSPAN="5"><BR><H3>PROJECT TIMELINE</H3>
+         </TH>
+      </TR>
+      <TR>
+         <TH></TH>
+         <TH>Umberto Di Fabrizio</TH>
+         <TH>Manuel Tanzi</TH>
+         <TH>Giacomo Scolari</TH>
+         <TH>Filippo Pellolio</TH>
+      </TR>
+      <TR ALIGN="CENTER">
+         <TD>Week 09/28</TD>
+         <TD COLSPAN="4">The Team meet to do requirement analysis, the mockups of the layout and class diagram.
+          The sketches and class diagram are shown below.</TD>
+      </TR>
+      <TR ALIGN="CENTER">
+         <TD>Week 10/05</TD>
+          <TD>I have created the filter panel that can be hided when needed.
+            Then the hurricanes have been inserted in form of a list that can be scrolled.
+            The hurricanes can be selected (one or more)
+            in order to hide or show it on the map and the filters to show all of them at once.
+            The list shows also the attribute speed and date.
+            The landed filter has been added in order to select only those hurricans that landed.
+            The calendar to select the period to filter the hurricanes has been implemented but not integrated yet.
+            Transferred diagrams from paper to digital.
+          </TD>
+                 <TD>
+ I have created a script that extracts some statistics from the dataset and format them in a JSON object.
+ I have created a left side panel scrollable composed by three subpanels that will contains the graphs relative to:
+1- Overall hurricanes statistics, i.e. graphs visualizing data from the entire dataset.
+2- Visualized hurricanes statistics, i.e graphs visualizing data about hurricanes visualized on the map.
+3 - Selected hurricanes statistics, i.e graphs visualizing data about one selected hurricane.
+ I have created some functions that generates the graphs relative to:
+1- Number of hurricanes per year (BarChart)
+2- Max Wind Speed per year (Line Chart, with circles in points for clarity)
+3- Minimum Pressure per year (Line Chart, with circles in points for clarity, the black circles mean that the data wasn't available for that year, and i levelled all of them to 900).
+</TD>
+          <TD>Implemented filtering functions that allow the user to filter the data visualized on the map (e.g. select hurricanes belonging to an interval of dates, get the top 10 hurricanes related to, for instance, max wind speed etc...).
+Implemented the model that provides the above functionalities to the visual part of the application, using the observer paradigm to update the map and the other visual tabs.</TD>
+          <TD>
+Inserted Map with leaflet
+Inserted possibility to visualize paths of hurricanes
+Added possibility to switch between layers
+Added possibility to play/pause selected hurricanes and see them moving on the map
+Added time relative to the map visualization.
+Added rotating marker for hurricanes
+Added real time trail that respects the wind in the quadrants
+Added comparing ability between lines (color scaled on wind speed)</TD>
+
+      </TR>
+   </TABLE>
+
+   <img src="img/classDiagramViz.png" >Class Diagram</img>
+    <img src="img/mockup.png">MockUp</img>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+.timeline-x-axis path,
+.timeline-x-axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.timeline-x-axis text {
+    font-family: sans-serif;
+    font-size: 2vmin;
+}
+
+#explore-buttons-container, #compare-buttons-container, #mixed-pattern-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 10%;
+}
+
+#explore-buttons-container:before {
+    content: "";
+    display: block;
+    margin-top: 40%;
+}
+
+#compare-buttons-container:before {
+    content: "";
+    display: block;
+    margin-top: 40%;
+}
+
+#mixed-pattern-container:before {
+    content: "";
+    display: block;
+    margin-top: 40%;
+}
+
+
+#explore-genres-button, #compare-genres-button {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+#compare-genres-button {
+    top: 50%;
+    visibility: hidden;
+}
+
+#explore-artists-button, #compare-artists-button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+#compare-artists-button {
+    top:0%;
+}
+
+#explore-genres-button::after {
+    font-size: 2vmin;
+    content: "GENRES";
+}
+
+#compare-genres-button::after {
+    font-size: 2vmin;
+    content: "GENRES";
+}
+
+#explore-artists-button::after {
+    font-size: 2vmin;
+    content: "ARTISTS";
+   
+}
+
+
+#compare-artists-button::after {
+    font-size: 2vmin;
+    content: "ARTISTS";
+   
+}
+
+.pure-button{display:inline-block;zoom:1;line-height:normal;white-space:nowrap;vertical-align:middle;text-align:center;cursor:pointer;-webkit-user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.pure-button::-moz-focus-inner{padding:0;border:0}
+.pure-button{font-family:inherit;font-size:100%;padding:.5em 1em;color:#444;color:rgba(0,0,0,.8);border:1px solid #999;border:0 rgba(0,0,0,0);background-color:#E6E6E6;text-decoration:none;border-radius:2px}
+.pure-button-hover,.pure-button:hover,.pure-button:focus{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);background-image:-webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));background-image:-webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:-moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));background-image:-o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))}
+.pure-button:focus{outline:0}
+.pure-button-active,.pure-button:active{box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;border-color:#000\9; cursor: pointer;}
+.pure-button[disabled],.pure-button-disabled,.pure-button-disabled:hover,.pure-button-disabled:focus,.pure-button-disabled:active{border:0;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);filter:alpha(opacity=40);-khtml-opacity:.4;-moz-opacity:.4;opacity:.4;box-shadow:none}
+.pure-button::-moz-focus-inner{padding:0;border:0}

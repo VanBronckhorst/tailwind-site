@@ -1,0 +1,10 @@
+diff a/js/FilterView.js b/js/FilterView.js	(rejected hunks)
+@@ -713,7 +713,7 @@
+ .attr('font-size', 20)
+ .attr('pointer-events','all' )
+ .attr('x', this.viewBoxWidth*0.84)
+-.attr('y', (heightSvgList * 1.27)+ "%")
++.attr('y', (heightSvgList * 1.23)+ "%")
+ .text('10');
+ 
+ var text10 =this.svgFilters

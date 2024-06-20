@@ -1,0 +1,83 @@
+#graphsViewTemp{
+  position: absolute;
+  right: 0px;
+  float:right;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.graphsView {
+  position: absolute;
+  right: 0px;
+  opacity: 0.9;
+  background-color: gray;
+}
+
+.graphsView.graphs.container {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.graphsView.graphs.container .panel {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: gray;
+}
+
+.graphsView.buttons.container {
+  bottom: 0px;
+  height: 20%;
+  width: 25%;
+}
+
+.graphsView.buttons.container .controls {
+
+}
+.graphsView.buttons.container .controls.area {
+  float: right;
+  height: 100%;
+  width: 20%;
+}
+.graphsView.buttons.container .controls.area .button {
+  height: 49%;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+
+
+.graphsView.buttons.container .controls.activation {
+  float: left;
+  height: 50%;
+  width: 80%;
+  display: flex;
+}
+.graphsView.buttons.container .controls.activation .button {
+  height: 99%;
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+
+
+.graphsView.buttons.container .controls.granularity {
+  float: left;
+  height: 50%;
+  width: 80%;
+  display: flex;
+}
+.graphsView.buttons.container .controls.granularity .button{
+  height: 99%;
+  width: 33.333%;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+

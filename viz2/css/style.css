@@ -1,0 +1,144 @@
+.map-div{
+	height: 100%;
+	width: 100%;	
+}
+
+.control-svg{
+	height: 100%;
+	width: 100%;	
+}
+.legend-control-svg{
+	background-color: white;	
+}
+.legend-labels{
+	dominant-baseline: hanging;
+}
+
+.layer-svg{
+	height: 100%;
+	width: 100%;	
+}
+.date-control{
+	background-color: transparent;
+}
+.time-control-text{
+	stroke: white;
+	fill: white;
+}
+.time-bar-control-text{
+	stroke: white;
+	fill: white;
+	text-align: right;
+}
+
+.warp-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 32;
+	color: yellow;
+	z-index: 100;
+}
+
+.play-view-container{
+	position:absolute;
+	bottom: 40;
+	left:40;
+	height: 10%;
+	width: 10%;
+	z-index: 200;
+}
+.play-view-button{
+	height:100%;
+	width: 20%;
+	background: url("../images/play.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	float: left;
+}
+.resume-view-button{
+	height:100%;
+	width: 20%;
+	background: url("../images/play.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	float: left;
+}
+.pause-view-button{
+	height:100%;
+	width: 20%;
+	background: url("../images/pause.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	float: left;
+}
+.stop-view-button{
+	height:100%;
+	width: 20%;
+	background: url("../images/stop.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	float: left;
+}
+.ff-view-button{
+	height:100%;
+	width: 20%;
+	background: url("../images/ff.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	float: left;
+}
+.rw-view-button{
+	height:100%;
+	width: 20%;
+	background: url("../images/rw.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	float: left;
+}
+
+.speed-view-button{
+	height:100%;
+	width: 20%;
+	
+	float: left;
+}
+
+.leaflet-control-layers-toggle{ 
+    width:100%;
+    background-position:3px 50% ;
+    padding:3px;
+    padding-left:36px;
+    text-decoration:none;
+    font-size: 36;
+    line-height:36px;
+
+}
+.leaflet-left.leaflet-top{
+	width:5%;
+}
+
+
+.leaflet-control-layers{
+	width:100%
+}
+.leaflet-right{
+	right: 25%;
+}
+
+.control-layer-text{
+	font-size: 36;
+}
+.eventPopup{
+	background-color: white;
+	border-radius: 25px;
+	font-family: arial;
+	padding: 25px;
+	
+}
+.eventPopup h2{
+	font-size: 32px;
+}

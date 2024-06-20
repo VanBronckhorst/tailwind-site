@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chess - Filippo Pellolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="lib/chessboardjs/css/chessboard-0.3.0.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K75GYMD0KY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K75GYMD0KY');
+    </script>
+    <body>
+    <div class="main">
+        <div id="top-bar" class="top-bar">
+            <a href="http://www.filippopellolio.com" class="name-title">Filippo Pellolio</a>
+            <a class="name-title">Chess AI</a>
+            <p class="invisible">Filippo Pellolio</p>
+        </div>
+        <div id="title-bar" class="title-bar">
+            <div class="fen-container">
+                <span>FEN</span>
+                <input id="fen-input" class="fen-input" type="text" /> 
+                <button id="load-button" class='button'>Load</button>
+            </div>
+            
+            <div class='turn-container'>
+                <span id="turn-label">Your Turn</span>
+            </div>
+
+            <div class="right-top-container">
+                <button id="restart-btn" class="button">Restart</button>
+            </div>
+            
+        </div>
+        <div id="options-bar" class="options-bar">
+            <p class="title">AI Level</p>
+            <form>
+                <input type="radio" name="depth" value=2> Easy<br>
+                <input type="radio" name="depth" value=3 checked> Smart<br>
+                <input type="radio" name="depth" value=4> Smarter
+            </form>
+            
+        </div>
+        <div class="board-container">
+            <div id="board" class="board"></div>
+        </div>
+        <div id="history" class="history">
+            <p class="title">Game History</p>
+            <div id="log-container" class="log-container"></div>
+        </div>    
+    </div>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <p id="end-label" class="title-white">Game Over</p>
+            <p id="end-content" class='end-content'></p>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="lib/chessboardjs/js/chess.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
